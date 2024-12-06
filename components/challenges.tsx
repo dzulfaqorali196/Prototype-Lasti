@@ -1,7 +1,6 @@
 "use client";
 
 import { Card } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { MOCK_CHALLENGES } from "@/lib/constants";
 
@@ -32,7 +31,12 @@ export function Challenges() {
                     <span>Progress</span>
                     <span>{challenge.progress}/{challenge.total}</span>
                   </div>
-                  <Progress value={(challenge.progress / challenge.total) * 100} className="h-2" />
+                  <div className="h-2 w-full bg-secondary rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-primary transition-all" 
+                      style={{ width: `${(challenge.progress / challenge.total) * 100}%` }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

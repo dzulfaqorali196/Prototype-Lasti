@@ -1,7 +1,6 @@
 "use client";
 
 import { Card } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
 import { MOCK_MISSIONS } from "@/lib/constants";
 
@@ -29,7 +28,12 @@ export function DailyMissions() {
                     <span>Progress</span>
                     <span>{mission.progress}/{mission.total}</span>
                   </div>
-                  <Progress value={(mission.progress / mission.total) * 100} className="h-2" />
+                  <div className="h-2 w-full bg-secondary rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-primary transition-all" 
+                      style={{ width: `${(mission.progress / mission.total) * 100}%` }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import { Card } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 import { Medal } from "lucide-react";
 import { usePointsStore } from "@/lib/store/points-store";
 
@@ -26,10 +25,12 @@ export function UserProgress() {
           <span>Progress to Level 6</span>
           <span>750/1000 XP</span>
         </div>
-        <Progress 
-          value={75} 
-          className="h-2 bg-white/20 [&>div]:bg-white" 
-        />
+        <div className="h-2 w-full bg-white/20 rounded-full overflow-hidden">
+          <div 
+            className="h-full bg-white transition-all" 
+            style={{ width: '75%' }}
+          />
+        </div>
       </div>
     </Card>
   );

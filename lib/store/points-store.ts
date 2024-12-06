@@ -9,7 +9,7 @@ interface PointsStore {
 }
 
 export const usePointsStore = create<PointsStore>((set) => ({
-  points: 1250, // Initial points
+  points: 2500, // Initial points
   deductPoints: (amount: number) => 
     set((state) => ({ points: state.points - amount })),
   addPoints: (amount: number) => 

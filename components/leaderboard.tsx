@@ -37,7 +37,7 @@ export function Leaderboard() {
               
               <div className="flex-1">
                 <div className="font-medium">{user.name}</div>
-                <div className="text-sm text-muted-foreground">Level {Math.floor(user.points / 500)} Explorer</div>
+                <div className="text-sm text-muted-foreground">{user.level}</div>
               </div>
               
               <div className="font-semibold text-[#00AA13]">{user.points} pts</div>

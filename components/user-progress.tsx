@@ -11,8 +11,8 @@ export function UserProgress() {
     <Card className="p-6 bg-[#00AA13] text-white">
       <div className="flex items-center justify-between mb-4">
         <div>
-          <h2 className="text-2xl font-bold">Hello, Budi!</h2>
-          <p className="text-green-100">Level 5 Explorer</p>
+          <h2 className="text-2xl font-bold">Hello, Dzul!</h2>
+          <p className="text-green-100">Level 99 Sepuh</p>
         </div>
         <div className="flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full">
           <Medal className="h-5 w-5" />
@@ -22,7 +22,7 @@ export function UserProgress() {
       
       <div>
         <div className="flex justify-between text-sm mb-2">
-          <span>Progress to Level 6</span>
+          <span>Progress to Level 100</span>
           <span>750/1000 XP</span>
         </div>
         <div className="h-2 w-full bg-white/20 rounded-full overflow-hidden">

@@ -61,11 +61,46 @@ export const MOCK_CHALLENGES = [
 ] as const;
 
 export const MOCK_LEADERBOARD = [
-  { id: 1, name: 'John D.', points: 2500, rank: 1, avatar: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36' },
-  { id: 2, name: 'Sarah M.', points: 2350, rank: 2, avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330' },
-  { id: 3, name: 'Alex W.', points: 2200, rank: 3, avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde' },
-  { id: 4, name: 'Maya R.', points: 2100, rank: 4, avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956' },
-  { id: 5, name: 'Kevin P.', points: 1950, rank: 5, avatar: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12' },
+  { 
+    id: 1, 
+    name: 'Dzul', 
+    points: 2500, 
+    rank: 1,
+    level: 'Level 99 Sepuh',
+    avatar: '/avatars/dzul.jpg'
+  },
+  { 
+    id: 2, 
+    name: 'Harry T.', 
+    points: 2350, 
+    rank: 2,
+    level: 'Level 5 Explorer',
+    avatar: '/avatars/harry.jpg'
+  },
+  { 
+    id: 3, 
+    name: 'Daffa R.', 
+    points: 2200, 
+    rank: 3,
+    level: 'Level 4 Explorer',
+    avatar: '/avatars/daffa.png'
+  },
+  { 
+    id: 4, 
+    name: 'Billy S.', 
+    points: 2100, 
+    rank: 4,
+    level: 'Level 4 Explorer',
+    avatar: '/avatars/billy.png'
+  },
+  { 
+    id: 5, 
+    name: 'Agif F.', 
+    points: 1950, 
+    rank: 5,
+    level: 'Level 3 Explorer',
+    avatar: '/avatars/agif.png'
+  },
 ] as const;
 
 export const MOCK_REWARDS = [

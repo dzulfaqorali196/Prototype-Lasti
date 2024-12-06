@@ -7,6 +7,7 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://prototype-lasti.vercel.app'),
   title: 'Gojek Rewards | Misi & Tantangan',
   description: 'Selesaikan misi, kumpulkan poin, dan dapatkan reward menarik dari Gojek. Nikmati berbagai voucher GoRide, GoFood, dan GoPay cashback.',
   keywords: 'gojek rewards, gojek points, gojek missions, gojek challenges, gojek vouchers',
@@ -17,12 +18,6 @@ export const metadata: Metadata = {
     images: ['/gojek.png'],
     type: 'website',
     locale: 'id_ID',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Gojek Rewards | Misi & Tantangan',
-    description: 'Selesaikan misi, kumpulkan poin, dan dapatkan reward menarik dari Gojek',
-    images: ['/gojek.png'],
   },
   icons: {
     icon: '/gojek.png',

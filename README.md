@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="ITB.png" alt="Logo ITB" width="200"/>
+  <img src="/public/ITB.png" alt="Logo ITB" width="200"/>
   <h1>Prototype Sistem Gamifikasi Gojek</h1>
   <p>Tugas Besar II3120 Layanan Sistem dan Teknologi Informasi</p>
 </div>

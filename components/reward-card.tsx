@@ -25,7 +25,7 @@ export function RewardCard({
   category,
 }: RewardCardProps) {
   const { claimStatus, claimReward, points: userPoints } = useRewardClaim();
-  const canClaim = userPoints >= points && claimStatus === 'idle';
+  const canClaim = userPoints >= points;
 
   return (
     <motion.div
@@ -74,7 +74,7 @@ export function RewardCard({
             <span className="font-medium text-[#00AA13]">{points} points</span>
             <Button
               variant={canClaim ? "default" : "outline"}
-              disabled={!canClaim || claimStatus === 'claiming'}
+              disabled={!canClaim || claimStatus !== 'idle'}
               onClick={() => claimReward(id, points)}
               className="relative"
             >

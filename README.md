@@ -32,7 +32,96 @@
 
 ## 📝 Deskripsi Proyek
 
-Prototype ini merupakan implementasi sistem gamifikasi untuk aplikasi Gojek yang bertujuan untuk meningkatkan engagement pengguna. Sistem ini merupakan bagian dari pengembangan layanan Gojek yang mengacu pada desain sistem yang telah ada dan mengimplementasikan fitur gamifikasi sesuai dengan kebutuhan pengguna.
+Prototype ini merupakan implementasi sistem gamifikasi untuk aplikasi Gojek yang bertujuan untuk meningkatkan engagement pengguna melalui sistem misi, reward, dan leaderboard.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Sebelum memulai, pastikan sistem Anda telah memenuhi persyaratan berikut:
+
+- Node.js (versi 16.x atau lebih tinggi)
+- npm (versi 8.x atau lebih tinggi) atau yarn (versi 1.22.x atau lebih tinggi)
+- Git
+
+### Installation
+
+1. Clone repository ini ke local machine Anda:
+```bash
+git clone https://github.com/your-username/prototype-gamifikasi-gojek.git
+cd prototype-gamifikasi-gojek
+```
+
+2. Install dependencies menggunakan npm:
+```bash
+npm install
+```
+Atau jika menggunakan yarn:
+```bash
+yarn install
+```
+
+3. Jalankan development server:
+```bash
+npm run dev
+# atau
+yarn dev
+```
+
+4. Buka browser dan akses `http://localhost:3000`
+
+### Build for Production
+
+Untuk membuild aplikasi untuk production:
+
+```bash
+npm run build
+# atau
+yarn build
+```
+
+Untuk menjalankan versi production di local:
+```bash
+npm run start
+# atau
+yarn start
+```
+
+### Running Tests
+
+Menjalankan unit tests:
+```bash
+npm run test
+# atau
+yarn test
+```
+
+Menjalankan e2e tests:
+```bash
+npm run test:e2e
+# atau
+yarn test:e2e
+```
+
+### Troubleshooting
+
+Jika mengalami masalah saat instalasi atau menjalankan aplikasi:
+
+1. Hapus folder node_modules dan file lock:
+```bash
+rm -rf node_modules
+rm package-lock.json # atau yarn.lock
+```
+
+2. Clear npm cache:
+```bash
+npm cache clean --force
+```
+
+3. Reinstall dependencies:
+```bash
+npm install
+```
 
 ### Fitur Utama
 
@@ -119,20 +208,6 @@ prototype-lasti/
 - Menggunakan shadcn/ui dengan custom theme Gojek
 - Komponen yang dioptimalkan untuk mobile-first design
 - Accessibility compliant
-
-## 🚀 Deployment
-
-### Prerequisites
-- Node.js 16.x or higher
-- npm/yarn/pnpm
-- Git
-
-### Installation Steps
-1. Clone repository
-2. Install dependencies
-3. Set up environment variables
-4. Run development server
-5. Build for production
 
 ## 🤝 Panduan Kontribusi
 
